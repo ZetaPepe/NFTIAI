@@ -2023,11 +2023,11 @@ export default function NFTMarketplace() {
 
         {/* Footer */}
         <footer className="mt-32 mb-16 pt-8 text-center space-y-2 relative z-20">
-          <p className="text-gray-400 text-sm">© 2025 SelfyAI. Tokenise The Virtual Agents Onchain.</p>
+          <p className="text-gray-400 text-sm">© 2025 NFTIAI. virtual IP becomes tokenized.</p>
           <p className="text-gray-400 text-sm">
             Contact us:{" "}
             <a href="mailto:contact@selfyai.io" className="gradient-text hover:text-[#a3ff12] transition-colors">
-              contact@selfyai.io
+              contact@nftiai.io
             </a>
           </p>
         </footer>
