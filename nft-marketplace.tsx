@@ -508,7 +508,7 @@ export default function NFTMarketplace() {
             {/* Social Icons */}
             <div className="flex items-center gap-3 mr-4">
               <a
-                href="https://github.com"
+                href="https://github.com/Axarb/NFTIAI"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-8 h-8 rounded-full border border-[#a3ff12] flex items-center justify-center hover:bg-[#a3ff12] hover:text-black transition-all duration-300 group"
@@ -516,7 +516,7 @@ export default function NFTMarketplace() {
                 <Github className="w-4 h-4 text-[#a3ff12] group-hover:text-black transition-colors" />
               </a>
               <a
-                href="https://twitter.com"
+                href="https://x.com/nfti_ai"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-8 h-8 rounded-full border border-[#a3ff12] flex items-center justify-center hover:bg-[#a3ff12] hover:text-black transition-all duration-300 group"
