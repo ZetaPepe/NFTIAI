@@ -2144,7 +2144,7 @@ export default function NFTMarketplace() {
           <p className="text-gray-400 text-sm">
             Contact us:{" "}
             <a href="mailto:contact@nftiai.io" className="gradient-text hover:text-[#a3ff12] transition-colors">
-              contact@selfyai.io
+              contact@nftiai.io
             </a>
           </p>
         </footer>
