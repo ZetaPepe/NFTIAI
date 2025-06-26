@@ -1378,16 +1378,12 @@ export default function NFTMarketplace() {
                   <div className="space-y-4">
                     <h3 className="gradient-text font-bold text-2xl">PSYCHE WIZARD</h3>
                     <div className="space-y-2">
-                      <p className="text-[#a3ff12] font-semibold text-sm">AI ARCHITECT & CO-FOUNDER</p>
-                      <p className="text-gray-300 text-sm leading-relaxed">
-                        Visionary AI researcher specializing in neural network tokenization and blockchain integration.
-                        Leading the development of MCP protocols for secure AI asset verification.
-                      </p>
+                      <p className="text-[#a3ff12] font-semibold text-sm">CO-FOUNDER</p>
                     </div>
 
                     <div className="flex justify-center space-x-4 pt-4">
                       <a
-                        href="https://x.com/PsycheWizard"
+                        href="https://x.com/psychewizard/status/1938144521721712718?s=46"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="flex items-center gap-2 px-4 py-2 border border-[#a3ff12] gradient-text text-sm hover:bg-[#a3ff12] hover:text-black transition-all duration-300 group"
@@ -1417,16 +1413,12 @@ export default function NFTMarketplace() {
                   <div className="space-y-4">
                     <h3 className="gradient-text font-bold text-2xl">BRUTAL MINDSET</h3>
                     <div className="space-y-2">
-                      <p className="text-[#a3ff12] font-semibold text-sm">BLOCKCHAIN STRATEGIST & CO-FOUNDER</p>
-                      <p className="text-gray-300 text-sm leading-relaxed">
-                        Solana ecosystem expert and DeFi pioneer. Architecting the RWA bridge infrastructure that
-                        enables seamless AI intellectual property tokenization on-chain.
-                      </p>
+                      <p className="text-[#a3ff12] font-semibold text-sm">PARTNER</p>
                     </div>
 
                     <div className="flex justify-center space-x-4 pt-4">
                       <a
-                        href="https://x.com/BrutalMindset"
+                        href="https://x.com/brutalmindset/status/1937808517743730733?s=46"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="flex items-center gap-2 px-4 py-2 border border-[#a3ff12] gradient-text text-sm hover:bg-[#a3ff12] hover:text-black transition-all duration-300 group"
