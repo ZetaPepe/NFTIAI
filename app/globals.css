@@ -1,0 +1,248 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .grow-underline {
+    animation: growUnderline 1.5s ease-in-out forwards;
+  }
+
+  .scanline {
+    animation: scanlineAnim 4s linear infinite;
+  }
+
+  @keyframes growUnderline {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+
+  @keyframes scanlineAnim {
+    0% {
+      transform: translateY(-100vh);
+    }
+    100% {
+      transform: translateY(100vh);
+    }
+  }
+
+  /* Mobile input fixes */
+  .touch-manipulation {
+    touch-action: manipulation;
+  }
+
+  .gradient-text {
+    background: linear-gradient(45deg, #ff1493, #8a2be2, #0000ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+  }
+}
+
+@media (max-width: 768px) {
+  .scanline {
+    display: none;
+  }
+
+  /* Reduce particle effects on mobile for performance */
+  canvas {
+    opacity: 0.1 !important;
+  }
+
+  /* Ensure text is readable on small screens */
+  .text-xs {
+    font-size: 0.75rem;
+  }
+
+  /* Improve touch targets */
+  button,
+  a {
+    min-height: 44px;
+    min-width: 44px;
+  }
+
+  /* Mobile input specific fixes */
+  input[type="text"] {
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    font-size: 16px !important; /* Prevents zoom on iOS */
+    transform: translateZ(0); /* Forces hardware acceleration */
+  }
+
+  /* Fix for mobile keyboard issues */
+  input:focus {
+    -webkit-user-select: text;
+    user-select: text;
+  }
+
+  /* Prevent zoom on input focus */
+  input,
+  select,
+  textarea {
+    font-size: 16px !important;
+  }
+}
+
+/* Improve clip-path on mobile */
+@media (max-width: 640px) {
+  /* Remove clip-path on mobile for better touch targets */
+  [style*="clipPath"],
+  [style*="clip-path"] {
+    clip-path: none !important;
+  }
+
+  /* Ensure all buttons have proper touch targets */
+  button {
+    min-height: 44px !important;
+    min-width: 44px !important;
+    touch-action: manipulation !important;
+    -webkit-tap-highlight-color: transparent !important;
+  }
+
+  /* Improve touch responsiveness */
+  .touch-manipulation {
+    touch-action: manipulation !important;
+    -webkit-tap-highlight-color: transparent !important;
+  }
+
+  /* Active states for better mobile feedback */
+  button:active {
+    transform: scale(0.98) !important;
+    transition: transform 0.1s ease !important;
+  }
+
+  /* Ensure input fields work properly on mobile */
+  input[type="text"] {
+    -webkit-appearance: none !important;
+    -webkit-border-radius: 0 !important;
+    border-radius: 4px !important;
+    font-size: 16px !important; /* Prevents zoom on iOS */
+    transform: translateZ(0) !important; /* Forces hardware acceleration */
+    touch-action: manipulation !important;
+  }
+
+  /* Fix for mobile keyboard issues */
+  input:focus {
+    -webkit-user-select: text !important;
+    user-select: text !important;
+  }
+}
+
+/* Fix for iOS Safari input issues */
+@supports (-webkit-touch-callout: none) {
+  button {
+    -webkit-tap-highlight-color: transparent !important;
+    -webkit-touch-callout: none !important;
+  }
+
+  input[type="text"] {
+    -webkit-appearance: none !important;
+    -webkit-border-radius: 0 !important;
+  }
+}
+
+/* Mobile button specific styles */
+.mobile-send-button {
+  -webkit-tap-highlight-color: transparent !important;
+  -webkit-touch-callout: none !important;
+  -webkit-user-select: none !important;
+  user-select: none !important;
+  touch-action: manipulation !important;
+  cursor: pointer !important;
+  border-radius: 4px !important;
+}
+
+.mobile-send-button:active {
+  background-color: rgba(163, 255, 18, 0.8) !important;
+  transform: scale(0.95) !important;
+  transition: all 0.1s ease !important;
+}
+
+.mobile-question-button {
+  -webkit-tap-highlight-color: transparent !important;
+  -webkit-touch-callout: none !important;
+  -webkit-user-select: none !important;
+  user-select: none !important;
+  touch-action: manipulation !important;
+  cursor: pointer !important;
+  border-radius: 4px !important;
+}
+
+.mobile-question-button:active {
+  background-color: rgba(163, 255, 18, 0.2) !important;
+  transform: scale(0.98) !important;
+  transition: all 0.1s ease !important;
+}
+
+@media (max-width: 768px) {
+  /* Remove all clip-path on mobile for better touch targets */
+  * {
+    clip-path: none !important;
+  }
+
+  /* Ensure all buttons have proper touch targets */
+  button {
+    min-height: 48px !important;
+    min-width: 48px !important;
+    touch-action: manipulation !important;
+    -webkit-tap-highlight-color: transparent !important;
+    -webkit-touch-callout: none !important;
+    -webkit-user-select: none !important;
+    user-select: none !important;
+    cursor: pointer !important;
+  }
+
+  /* Active states for better mobile feedback */
+  button:active {
+    transform: scale(0.95) !important;
+    transition: transform 0.1s ease !important;
+  }
+
+  /* Ensure input fields work properly on mobile */
+  input[type="text"] {
+    -webkit-appearance: none !important;
+    -webkit-border-radius: 0 !important;
+    border-radius: 4px !important;
+    font-size: 16px !important; /* Prevents zoom on iOS */
+    transform: translateZ(0) !important; /* Forces hardware acceleration */
+    touch-action: manipulation !important;
+  }
+
+  /* Fix for mobile keyboard issues */
+  input:focus {
+    -webkit-user-select: text !important;
+    user-select: text !important;
+  }
+}
+
+/* Fix for iOS Safari input issues */
+@supports (-webkit-touch-callout: none) {
+  button {
+    -webkit-tap-highlight-color: transparent !important;
+    -webkit-touch-callout: none !important;
+  }
+
+  input[type="text"] {
+    -webkit-appearance: none !important;
+    -webkit-border-radius: 0 !important;
+  }
+}
+
+/* Ensure proper touch behavior on all mobile devices */
+@media (pointer: coarse) {
+  button {
+    min-height: 48px !important;
+    min-width: 48px !important;
+    touch-action: manipulation !important;
+    -webkit-tap-highlight-color: transparent !important;
+  }
+
+  button:active {
+    transform: scale(0.95) !important;
+  }
+}
