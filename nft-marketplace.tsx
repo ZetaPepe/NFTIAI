@@ -546,7 +546,7 @@ export default function NFTMarketplace() {
             {/* Social Icons */}
             <div className="flex items-center gap-3 mr-4">
               <a
-                href="https://github.com"
+                href="https://github.com/Axarb/NFTIAI"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-8 h-8 rounded-full border border-[#a3ff12] flex items-center justify-center hover:bg-[#a3ff12] hover:text-black transition-all duration-300 group"
@@ -554,7 +554,7 @@ export default function NFTMarketplace() {
                 <Github className="w-4 h-4 text-[#a3ff12] group-hover:text-black transition-colors" />
               </a>
               <a
-                href="https://twitter.com"
+                href="https://x.com/nfti_ai"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-8 h-8 rounded-full border border-[#a3ff12] flex items-center justify-center hover:bg-[#a3ff12] hover:text-black transition-all duration-300 group"
@@ -2083,8 +2083,8 @@ export default function NFTMarketplace() {
             {/* Alternative Contact Methods */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
               {[
-                { title: "TWITTER", desc: "Follow for updates", action: "FOLLOW US", link: "https://twitter.com" },
-                { title: "GITHUB", desc: "View our code", action: "FOLLOW US", link: "https://github.com" },
+                { title: "TWITTER", desc: "Follow for updates", action: "FOLLOW US", link: "https://x.com/nfti_ai" },
+                { title: "GITHUB", desc: "View our code", action: "FOLLOW US", link: "https://github.com/Axarb/NFTIAI" },
               ].map((contact, index) => (
                 <div
                   key={contact.title}
@@ -2148,10 +2148,10 @@ export default function NFTMarketplace() {
 
         {/* Footer */}
         <footer className="mt-32 mb-16 pt-8 text-center space-y-2 relative z-20">
-          <p className="text-gray-400 text-sm">© 2025 SelfyAI. Tokenise The Virtual Agents Onchain.</p>
+          <p className="text-gray-400 text-sm">© 2025 NFTI AI. Virtual IP becomes tokenized.</p>
           <p className="text-gray-400 text-sm">
             Contact us:{" "}
-            <a href="mailto:contact@selfyai.io" className="gradient-text hover:text-[#a3ff12] transition-colors">
+            <a href="mailto:contact@nftiai.io" className="gradient-text hover:text-[#a3ff12] transition-colors">
               contact@selfyai.io
             </a>
           </p>
